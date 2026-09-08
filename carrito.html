@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito | EMAA</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="favicon.png">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+                    HEADER
+    ========================================== -->
+
+    <header class="navbar carrito-header">
+
+    <div class="logo-contenedor">
+
+        <a href="index.html"
+           class="logo-link"
+           aria-label="Ir al inicio">
+
+            <img
+                src="./favicon.png"
+                class="logo-emaa"
+                alt="Logo EMAA">
+
+        </a>
+
+    </div>
+
+
+    <div class="titulo-carrito">
+
+        <h2>Mi carrito</h2>
+
+        <p>Revisa tu pedido antes de finalizar</p>
+
+    </div>
+
+
+    <a href="productos.html"
+       class="volver-productos-header">
+
+        <i class="fas fa-arrow-left"></i>
+
+        Seguir comprando
+
+    </a>
+    </header>
+
+
+    <!-- =========================================
+                    CONTENIDO
+    ========================================== -->
+
+    <main class="carrito-pagina">
+
+    <div class="carrito-titulo">
+
+        <span class="carrito-icono">
+            <i class="fas fa-shopping-cart"></i>
+        </span>
+
+        <div>
+
+            <h1>Tu carrito</h1>
+
+            <p>
+                Revisa los productos que has agregado a tu pedido.
+            </p>
+
+        </div>
+
+    </div>
+
+
+        <section
+            class="cart-summary"
+            id="cartSummary">
+
+            <div id="cartItemsList"></div>
+
+
+            <div class="cart-info-row">
+
+                <span>
+                    Productos:
+                </span>
+
+                <strong id="cartCountText">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="cart-info-row">
+
+                <span>
+                    Total:
+                </span>
+
+                <strong id="cartTotalText">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="cart-info-row">
+
+                <span>
+                    Puntos a ganar:
+                </span>
+
+                <strong id="cartPointsText">
+                    0 pts
+                </strong>
+
+            </div>
+
+
+            <div class="cart-actions">
+
+                <button
+                    type="button"
+                    id="checkoutBtn">
+
+                    Finalizar compra
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="whatsappPayBtn">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    Pagar por WhatsApp
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+                    FOOTER                                                                                                          
+
+    </div>
+
+</body>
+
+</html>

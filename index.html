@@ -1,0 +1,390 @@
+﻿    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>EmaaTablasDeQuesos</title>
+        <link rel="icon" type="img/png" href="favicon.png">
+        <script src="./js/utils.js" defer></script>
+        <script src="./js/navigation.js" defer></script>
+        <script src="./js/search.js" defer></script>
+        <script src="./js/help.js" defer></script>
+        <script src="./js/carousel.js" defer></script>
+        <script src="./js/user.js" defer></script>
+        <script src="./js/login.js" defer></script>
+        <script src="./js/cart.js" defer></script>
+        <script src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hero.css">
+        <link rel="stylesheet" href="css/servicios.css">
+        <link rel="stylesheet" href="css/productos.css">
+        <link rel="stylesheet" href="css/cotiza.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/carrito.css">
+        <link rel="stylesheet" href="css/ayuda.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <body>
+
+        <a href="https://wa.me/573246501091" target="_blank" class="whatsapp-float">
+        <img src="imagenes/Image logo whatsApp.png" alt="WhatsApp">
+        </a>
+
+        <header class="navbar" id="inicio">
+            <div class="navbar-inner">
+                <div class="logo-contenedor">
+                    <a href="index.html" class="logo-link" data-action="go-home" aria-label="Ir al inicio">
+                        <img src="./favicon.png" class="logo-emaa" alt="Logo EMAA">
+                    </a>
+                </div>
+
+                <nav class="menu" aria-label="Menú principal">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="quienes-somos.html" class="dropdown">
+                                Quiénes somos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="servicios.html" class="dropdown">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html" class="dropdown">
+                                Productos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <form class="search-form" id="searchForm" aria-label="Buscar productos" autocomplete="off">
+                        <label for="buscador" class="sr-only">Buscar producto</label>
+                        <input type="text" id="buscador" placeholder="Buscar producto..." aria-label="Buscar producto">
+                        <button type="submit" id="btnBuscar" class="search-button" aria-label="Buscar producto">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div id="userArea" class="user-area">
+                        <button type="button" id="userLoginBtn" class="icon-button" aria-label="Iniciar sesión" data-action="open-login">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div id="userSessionCard" class="user-session-card hidden">
+                            <span class="user-session-name" id="loggedUser"></span>
+                            <span class="user-session-points" id="userPoints"></span>
+                            <button type="button" id="logoutBtn" class="logout-button" aria-label="Cerrar sesión">
+                                <i class="fas fa-right-from-bracket" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" id="cartBtn" class="icon-button" aria-label="Ver carrito" data-action="toggle-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    <section class="hero-carrusel" id="home">
+        <div class="hero-texto">
+            <h1>Emaa Tablas de Quesos</h1>
+            <p>Momentos especiales con sabores que se comparten. Explora algunas de nuestras tablas y antójate para tu próxima celebración.</p>
+            <button type="button" data-action="toggle-section" data-target="Cotiza">Cotiza tu evento</button>
+        </div>
+        <div class="carrusel" aria-label="Galería de tablas de quesos">
+            <div class="carrusel-pista">
+                <img class="carrusel-imagen activa" src="imagenes/carrusel-profesional/Caja supreme.png" alt="Caja supreme Emaa">
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Canastas de queso.png" alt="Canastas de queso Emaa">
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Tabla grande cercana.png" alt="Tabla grande cercana Emaa">
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Sodas Molotow.png" alt="Sodas Molotow Emaa">
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Tabla grande.png" alt="Tabla grande Emaa">
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Tabla 2-3 personas (2).png" alt="Tabla 2-3 personas Emaa">
+
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Bebidas Molotov.png" alt="Bebidas Molotov Emaa">
+
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Canapes con salmon.png" alt="Canapes con salmon Emaa">
+
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Tabla tradicional.png" alt="Tabla tradicional Emaa">
+
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Sangria personal.png" alt="Sangria personal Emaa">
+
+                <img class="carrusel-imagen" src="imagenes/carrusel-profesional/Pasabocas.png" alt="Pasabocas Emaa">
+
+            </div>
+
+            <button type="button" class="carrusel-control carrusel-prev" aria-label="Imagen anterior">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="carrusel-control carrusel-next" aria-label="Imagen siguiente">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <div class="carrusel-indicadores" aria-label="Seleccionar imagen del carrusel"></div>
+        </div>
+    </section>
+
+    <div class="login-modal hidden" id="loginModal">
+        <div class="login-card">
+            <button type="button" class="close-login" id="closeLogin" ></button>
+            <div class="form-panel" id="loginPanel">
+                <h2>Iniciar sesión</h2>
+                <label for="loginUser">Usuario</label>
+                <input type="text" id="loginUser" name="usuario" required placeholder="Nombre de usuario">
+                <label for="loginPassword">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="loginPassword" name="password" required placeholder="Contraseña">
+                    <button type="button" class="eye-icon" data-password-toggle="loginPassword" aria-label="Mostrar contraseña">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <button type="button" id="loginSubmit">Entrar</button>
+            </div>
+            <div class="form-panel hidden" id="registerPanel">
+                <h2>Crear cuenta</h2>
+                <label for="registerName">Usuario</label>
+                <input type="text" id="registerName" name="usuario" required placeholder="Nombre de usuario">
+                <label for="registerEmail">Correo</label>
+                <input type="email" id="registerEmail" name="email" required placeholder="usuario@gmail.com">
+                <label for="registerPassword">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="registerPassword" name="password" required minlength="8" placeholder="Mínimo 8 caracteres">
+                    <button type="button" class="eye-icon" data-password-toggle="registerPassword" aria-label="Mostrar contraseña">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <label for="registerPasswordConfirm">Confirmar contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="registerPasswordConfirm" name="password_confirm" required minlength="8" placeholder="Confirmar contraseña">
+                    <button type="button" class="eye-icon" data-password-toggle="registerPasswordConfirm" aria-label="Mostrar contraseña">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <button type="button" id="registerSubmit">Crear cuenta</button>
+            </div>
+            <div class="form-panel hidden" id="recoverPanel">
+                <h2>Recuperar contraseña</h2>
+                <label for="recoverEmail">Correo</label>
+                <input type="email" id="recoverEmail" name="email" required placeholder="Correo electrónico">
+                <button type="button" id="recoverSubmit">Enviar enlace</button>
+            </div>
+            <div class="modal-links">
+                <button type="button" id="showRegister" class="text-button">Crear cuenta</button>
+                <button type="button" id="showRecover" class="text-button">¿Olvidaste contraseña?</button>
+                <button type="button" id="showLogin" class="text-button hidden">Volver al login</button>
+            </div>
+            <p class="login-help" id="loginMessage"></p>
+        </div>
+    </div>
+    
+        <section id="Servicios" class="oculto">
+            <h2>Servicios</h2>
+        
+        <div class="contenedor-servicios">
+
+        <div class="Servicio">
+            <h3>Regalos corporativos</h3>
+            <img src="imagenes/carrusel-profesional/Canastas de queso.png" alt="Canastas de queso Emaa" class="img-servicio">
+            <p>Diseños personalizados para eventos familiares, empresariales y celebraciones especiales.</p>
+        </div>
+
+        <div class="Servicio">
+            <h3>Eventos</h3>
+            <img src="imagenes/carrusel-profesional/Canapes con salmon.png" alt="Evento Emaa" class="img-servicio">
+            <p>Variedad de carnes frías, quesos y acompañamientos con presentación elegante.</p>
+        </div>  
+
+        <div class="Servicio">
+            <h3>Tabla de quesos</h3>
+            <img src="imagenes/carrusel-profesional/Tabla 2-3 personas (2).png" alt="Tabla 2-3 personas Emaa" class="img-servicio">
+            <p>Montaje visual atractivo para cumpleaños, bodas, reuniones y eventos corporativos.</p>
+        </div> 
+    </div>
+        
+    </section>
+
+        <section id="Productos" class="oculto">
+            <h2>Productos</h2>
+            <div class="contenedor-productos">
+                <div class="Producto" data-name="Tablas Mini al por mayor" data-price="15900">
+                    <img src="imagenes/carrusel-profesional/Canasta mini.png" class="img-producto" alt="Tablas Mini al por mayor">
+                    <h3>Tablas Mini al por mayor</h3>
+                    <p>Especial para detalles corporativos. Se vende a partir de 15 unidades.</p>
+                    <p class="precio">$15.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Producto" data-name="Pasabocas para eventos" data-price="15900">
+                    <img src="imagenes/carrusel-profesional/Pasabocas.png" class="img-producto" alt="Pasabocas para eventos">
+                    <h3>Pasabocas para eventos</h3>
+                    <p>Pasabocas personalizados ideales para empresas o celebraciones.</p>
+                    <p class="precio">$15.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                
+                <div class="Producto" data-name="Tabla 2 a 3 personas" data-price="92900">
+                    <img src="imagenes/carrusel-profesional/Tabla 2-3 personas (2).png" class="img-producto" alt="Tabla 2 a 3 personas">
+                    <h3>Tabla 2 a 3 personas</h3>
+                    <p>Detalles personalizados ideales para eventos especiales.</p>
+                    <p class="precio">$92.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Producto" data-name="Bebidas" data-price="15000">
+                    <img src="imagenes/carrusel-profesional/Bebidas Molotov.png" class="img-producto" alt="Bebidas">
+                    <h3>Bebidas</h3>
+                    <p>Refresca a tus invitados con estas deliciosas sodas.</p>
+                    <p class="precio">$15.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Producto" data-name="Sangría" data-price="52900">
+                    <img src="imagenes/carrusel-profesional/Sangria personal.png" class="img-producto" alt="Sangría">
+                    <h3>Sangría</h3>
+                    <p>Excelente bebida para acompañar tu tabla de quesos.</p>
+                    <p class="precio">$52.900</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Producto" data-name="Caja supreme" data-price="160000">
+                    <img src="imagenes/carrusel-profesional/Caja supreme.png" class="img-producto" alt="Caja supreme">
+                    <h3>Caja supreme</h3>
+                    <p>Regalo premium con productos seleccionados para celebraciones.</p>
+                    <p class="precio">$160.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                
+                <div class="Producto" data-name="Tablas de queso tradicionales" data-price="155000">
+                    <img src="imagenes/carrusel-profesional/Tabla tradicional.png" class="img-producto" alt="Tablas de queso tradicionales">
+                    <h3>Tablas de queso tradicionales</h3>
+                    <p>Perfectas para reuniones más grandes y celebraciones especiales.</p>
+                    <p class="precio">10 personas: $155.000</p>
+                    <p class="precio">13 personas: $175.000</p>
+                    <p class="precio">18 personas: $195.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="Producto" data-name="Tabla para grupos y eventos" data-price="165000">
+                    <img src="imagenes/carrusel-profesional/Tabla fondue.png" class="img-producto" alt="Tabla fondue">
+                    <h3>Tabla para grupos y eventos con fondue</h3>
+                    <p>Ideal para grupos, con chocolate y selección gourmet.</p>
+                    <p class="precio">2 a 5 personas: $165.000</p>
+                    <p class="precio">6 a 8 personas: $198.000</p>
+                    <p class="precio">12 personas: $262.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Cotiza" class="oculto">
+            <h2>Cotiza</h2>
+            <div class="contenedor-cotiza">
+
+        <form class="formulario-cotiza">
+
+            <div class="campo-cotiza">
+                <label for="cotizaNombre">Nombre:</label>
+                <input type="text" id="cotizaNombre" required minlength="2" autocomplete="name">
+            </div>
+
+            <div class="campo-cotiza">
+                <label for="cotizaCelular">Celular:</label>
+                <input type="tel" id="cotizaCelular" required pattern="[0-9]{7,15}" inputmode="numeric" autocomplete="tel">
+            </div>
+
+            <div class="campo-cotiza">
+                <label for="cotizaCorreo">Correo:</label>
+                <input type="email" id="cotizaCorreo" required autocomplete="email">
+            </div>
+
+            <div class="campo-cotiza">
+                <label for="cotizaEvento">Evento a cotizar:</label>
+                <input type="text" id="cotizaEvento" required minlength="3">
+            </div>
+
+            <div class="campo-cotiza">
+                <label for="cotizaPersonas"># de personas:</label>
+                <input type="number" id="cotizaPersonas" required min="1" step="1" inputmode="numeric">
+            </div>
+
+            <div class="campo-cotiza">
+                <label for="cotizaFecha">Fecha:</label>
+                <input type="date" id="cotizaFecha" required>
+            </div>
+
+            <div class="campo-cotiza campo-cotiza-amplio">
+                <label for="cotizaInformacion">Información adicional:</label>
+                <textarea id="cotizaInformacion" rows="3"></textarea>
+            </div>
+
+            <button class="boton-cotiza" type="submit">Enviar</button>
+
+        </form>
+    </div>
+</section>
+
+<div class="confirmacion-modal oculto" id="confirmacionCotiza" role="dialog" aria-modal="true" aria-labelledby="tituloConfirmacion">
+    <div class="confirmacion-card">
+        <h2 id="tituloConfirmacion">¡Evento guardado!</h2>
+        <p>Tu solicitud de cotización ha sido guardada correctamente. Nos pondremos en contacto contigo pronto.</p>
+        <button type="button" id="cerrarConfirmacion">Volver al inicio</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+
+    <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Ir al inicio de EMAA">
+            <img src="favicon.png" alt="Logo EMAA">
+        </a>
+        <p class="footer-brand-title">EMAA Eventos <span>Tablas de Quesos</span></p>
+    </div>
+
+    <div class="footer-col">
+
+    <h3>Centro de Ayuda</h3>
+    <ul>
+            <li>
+                <a href="ayuda.html">
+                Ir al Centro de Ayuda
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        <div class="footer-col footer-hours">
+            <h3>Horario de atención</h3>
+            <p>Lunes a Viernes</p>
+            <p>9:00 a.m. - 5:00 p.m.</p>
+            <p>Sábados</p>
+            <p>8:00 a.m. - 12:00 m.</p>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contacto</h3>
+            <p>Escríbenos o síguenos para conocer nuestras novedades.</p>
+            <div class="social-icons" aria-label="Canales de contacto">
+                <a href="https://www.instagram.com/emaa.tabladequesos/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de EMAA" title="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:contacto@emaa.com" aria-label="Enviar correo a EMAA" title="Correo">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="tel:+573246501091" aria-label="Llamar a EMAA al +57 324 650 1091" title="Llamar">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 EMAA. Todos los derechos reservados.</p>
+    </div>
+
+        
+</footer>
+</body>
+</html>

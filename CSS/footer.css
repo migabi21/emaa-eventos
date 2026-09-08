@@ -1,0 +1,172 @@
+/*==================================================
+                    FOOTER EMAA
+==================================================*/
+
+.footer{
+    background:#023F56;
+    color:#F3DC9A;
+    width:100%;
+    margin-top:auto;
+    padding: 0;
+    font-style:italic;
+    font-weight:bold;
+    color: rgba(255, 248, 231, .68);
+    border-top:1px solid rgba(243, 220, 154, .3);
+}
+
+.footer-container{
+    width:min(1180px, 86%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr repeat(3, 1fr);
+    gap:clamp(28px, 4vw, 56px);
+    padding:28px 0 30px;
+    align-items:start;
+}
+
+.footer-brand,
+.footer-col,
+.footer-contact{
+    min-width:0;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo{
+    display:inline-flex;
+    width:82px;
+    margin-bottom:0;
+    line-height:0;
+}
+
+.footer-logo img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.footer-brand-title{
+    margin:0;
+    color:#F3DC9A;
+    font-size:1.05rem;
+    font-weight:700;
+    line-height:1.35;
+}
+
+.footer-brand-title span{
+    display:block;
+    color:#F3DC9A;
+    font-size:.84rem;
+    font-weight:500;
+    letter-spacing:.04em;
+}
+
+.footer-col h3,
+.footer-contact h3{
+    color:#F3DC9A;
+    font-size:1.05rem;
+    margin:8px 0 14px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+    color:#F3DC9A;
+}
+
+.footer-col li + li{ margin-top:10px; }
+
+.footer-col a,
+.footer-contact a,
+.footer-contact > span{
+    color:#F3DC9A
+
+}
+
+.footer-col a:hover,
+.footer-contact a:hover{
+    color:#F3DC9A;
+}
+
+.footer-contact p{
+    max-width:250px;
+    color:#F3DC9A;
+    line-height:1.55;
+}
+
+.footer .footer-hours p{
+    color:#F3DC9A !important;
+}
+
+.footer-col a i{ margin-left:6px; font-size:.76rem; }
+
+.footer-hours p + p{ margin-top:7px; }
+.footer-hours strong{ color:#F3DC9A; }
+
+.social-icons{
+    display:flex;
+    gap:10px;
+    margin-top:18px;
+}
+
+.social-icons a{
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    border:1px solid rgba(243, 220, 154, .52);
+    border-radius:50%;
+    color:#F3DC9A;
+    font-size:1.08rem;
+    transition:background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus-visible{
+    background:#F3DC9A;
+    color:#023F56;
+    transform:translateY(-4px);
+    outline:none;
+}
+
+.footer-bottom{
+    width:100%;
+    margin:0;
+    padding:17px 7% 20px;
+    border-top:1px solid rgba(243, 220, 154, .3);
+    color:rgba(255, 248, 231, .68);
+    text-align:center;
+    font-size:.84rem;
+}
+
+/* Mantiene el footer al final en páginas cortas, sin cubrir el contenido. */
+body:has(.footer){
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/*==========================
+        BOTON WHATSAPP
+==========================*/
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.whatsapp-float img{ width:100px; }
+
+@media (max-width:900px){
+    .footer-container{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width:560px){
+    .footer{ padding:42px 22px 0; }
+    .footer-container{ grid-template-columns:1fr; gap:28px; }
+}

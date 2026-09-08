@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda | EMAA</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/ayuda.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/navigation.js" defer></script> 
+    <script src="./js/search.js" defer></script>
+    <script src="./js/help.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/user.js" defer></script>
+    <script src="./js/login.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+ <header class="navbar navbar-quienes" id="inicio">
+        <div class="logo-contenedor">
+            <a href="index.html" class="logo-link" data-action="go-home" aria-label="Ir al inicio">
+            <img src="./favicon.png" class="logo-emaa" alt="Logo EMAA">
+            </a>
+        </div>
+
+        <div class="titulo-ayuda">
+            <h2>Centro de Ayuda</h2>
+        </div>
+    </header>
+
+   <section class="hero-ayuda">
+
+    <div class="hero-ayuda-contenido">
+
+        <h1>¿Cómo podemos ayudarte?</h1>
+        <p>
+            Encuentra respuestas sobre compras, pagos, entregas y garantías.
+        </p>
+    </div>
+
+</section>
+
+    <section class="categorias-ayuda">
+
+    <div class="categoria" onclick="mostrarCategoria('comprar')">
+
+        <i class="fas fa-shopping-cart"></i>
+
+        <h3>¿Cómo comprar?</h3>
+        <p>
+            Aprende cómo realizar tu pedido.
+        </p>
+
+    </div>
+
+    <div class="categoria" onclick="mostrarCategoria('pagos')">
+        <i class="fas fa-credit-card"></i>
+        <h3>Métodos de pago</h3>
+        <p>
+            Consulta los medios de pago disponibles.
+        </p>
+    </div>
+
+    <div class="categoria" onclick="mostrarCategoria('entregas')">
+
+        <i class="fas fa-truck"></i>
+        <h3>Tiempos de entrega</h3>
+        <p>
+            Conoce nuestros tiempos de despacho.
+        </p>
+    </div>
+
+    <div class="categoria" onclick="mostrarCategoria('garantias')">
+
+        <i class="fas fa-shield-alt"></i>
+        <h3>Garantías y cambios</h3>
+        <p>
+            Información sobre cambios y garantías.
+        </p>
+    </div>
+
+</section>
+
+<section class="contenido-ayuda">
+
+    <div id="contenidoCategoria"></div>
+
+</section>
+</body>
+
+</html>>

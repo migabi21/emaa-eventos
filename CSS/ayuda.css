@@ -1,0 +1,139 @@
+/*==================================================
+                CENTRO DE AYUDA
+==================================================*/
+
+.titulo-ayuda{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+    color:#023F56;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.titulo-ayuda h2{
+    font-size:35px;
+    margin-bottom:0;
+    color:#023F56;
+}
+
+.hero-ayuda{
+    background:#023F56;
+    color:#F3DC9A;
+    text-align:center;
+    padding:10px 7px;
+    font-style:italic;
+}
+
+.hero-ayuda h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero-ayuda p{
+    font-size:18px;
+    align-items:center;
+}
+
+.categorias-ayuda{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:50px;
+    background:#F3DC9A;
+    align-items:center;
+}
+
+.categoria{
+    background:#F3DC9A;
+    border:3px solid #023F56;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(2,63,86,.12);
+}
+
+.categoria:hover{
+    transform:translateY(-8px);
+}
+
+.categoria i{
+    font-size:45px;
+    color:#023F56;
+    margin-bottom:20px;
+}
+
+.categoria h3{
+    color:#023F56;
+    margin-bottom:5px;
+}
+
+.categoria p{
+    color:#023F56;
+    line-height:1.6;
+}
+
+.faq{
+    margin-top:20px;
+}
+
+.pregunta{
+    width:100%;
+    background:#F3DC9A;
+    border:2px solid #F3DC9A;
+    border-radius:12px;
+    padding:7px;
+    margin-top:12px;
+    color:#023F56;
+    cursor:pointer;
+    transition:.3s;
+    font-size: unset;
+}
+
+.pregunta:hover{
+    border-color:#023F56;
+}
+
+.respuesta{
+    display:none;
+    padding:10px 0;
+    color:#023F56;
+    line-height:1.6;
+}
+
+.respuesta.mostrar{
+    display:block;
+}
+
+.contenido-ayuda{
+    width:85%;
+    max-width:1000px;
+    margin:0px auto;
+    background:#023F56;
+    color:#F3DC9A;
+    border-radius:18px;
+    padding:50px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    display:none;
+}
+
+.contenido-ayuda h2{
+    color:#F3DC9A;
+    text-align:center;
+}
+
+.contenido-ayuda .pregunta{
+    background:#023F56;
+    border-color:#F3DC9A;
+    color:#F3DC9A;
+}
+
+.contenido-ayuda .pregunta:hover{
+    border-color:#ffffff;
+}
+
+.contenido-ayuda .respuesta{
+    color:#F3DC9A;
+}

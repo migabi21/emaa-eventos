@@ -1,0 +1,85 @@
+/*==================================================
+                VARIABLES
+==================================================*/
+
+:root{
+    --color-primario:#023F56;
+    --color-secundario:#F3DC9A;
+    --color-blanco:#ffffff;
+    --color-gris:#555555;
+    --radio:25px;
+    --sombra:0 10px 25px rgba(0,0,0,.15);
+    --transicion:.30s ease;
+}
+
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+    font-style: italic;
+}
+
+/*==================================================
+                    BODY
+==================================================*/
+
+body{
+    background:var(--color-secundario);
+    padding-top:140px;
+    font-family:"LINE Seed JP",sans-serif;
+    font-style: italic;
+}
+
+/*==================================================
+                IMÁGENES
+==================================================*/
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/*==================================================
+                ENLACES
+==================================================*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/*==================================================
+                BOTONES
+==================================================*/
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+    font-style: italic;
+}
+
+/*==================================================
+            CLASES GENERALES
+==================================================*/
+
+.hidden{
+    display:none;
+}
+
+.oculto{
+    display:none;
+}

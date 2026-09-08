@@ -1,0 +1,160 @@
+/*==================================================
+                    LOGIN Y REGISTRO
+==================================================*/
+
+/* Fondo del modal */
+
+.login-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.48);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    z-index:999;
+    margin-top: 20px;
+}
+
+.login-modal.hidden{
+    display:none;
+}
+
+/* Tarjeta */
+
+.login-card{
+    width:min(280px,100%);
+    background:#F3DC9A;
+    color:#023F56;
+    padding:10px 10px;
+    border-radius:24px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    margin-top: 90px;
+}
+
+/* Título */
+
+.login-card h2{
+    font-size:1.8rem;
+    margin-bottom:5px;
+}
+
+/* Etiquetas */
+
+.login-card label{
+    font-weight:bold;
+}
+
+/* Inputs */
+
+.login-card input{
+    width:100%;
+    padding: 6px 25px;
+    border-radius:14px;
+    border:1px solid rgba(2,63,86,.25);
+    font-size:15px;
+}
+
+/* Contenedor contraseña */
+
+.password-container{
+    position:relative;
+}
+
+.password-container input{
+    padding-right:48px;
+}
+
+/* Ojo */
+
+.eye-icon{
+    position:absolute;
+    right:8px;
+    top:50%;
+    transform:translateY(-50%);
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    background:transparent;
+    color:#023F56;
+    cursor:pointer;
+}
+
+/* Botones */
+
+.login-card button{
+    background:#023F56;
+    color:#F3DC9A;
+    border:none;
+    border-radius:14px;
+    padding:5px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.30s;
+}
+
+.login-card button:hover{
+    background:#03506d;
+}
+
+/* Botón cerrar */
+
+.close-login{
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:none;
+    border:none;
+    color:#023F56;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* Paneles */
+
+.form-panel{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    text-decoration: none;
+}
+
+.form-panel.hidden{
+    display:none;
+}
+
+/* Enlaces */
+
+.modal-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:8px;
+    text-align:center;
+}
+
+.text-button{
+    background:none;
+    border:none;
+    color:#023F56;
+    cursor:pointer;
+    text-decoration:underline;
+    font-size:.95rem;
+    padding:0;
+    text-decoration: none;
+}
+
+.text-button:hover{
+    color:#046487;
+}
+
+.text-button.hidden {
+    display: none;
+}
