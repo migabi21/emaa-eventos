@@ -11,9 +11,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:30px;
-    z-index:999;
-    margin-top: 20px;
+    padding:24px;
+    z-index:2000;
+    overflow-y:auto;
 }
 
 .login-modal.hidden{
@@ -23,7 +23,7 @@
 /* Tarjeta */
 
 .login-card{
-    width:min(280px,100%);
+    width:min(420px,100%);
     background:#F3DC9A;
     color:#023F56;
     padding:10px 10px;
@@ -33,7 +33,9 @@
     flex-direction:column;
     gap:10px;
     box-shadow:0 20px 40px rgba(0,0,0,.25);
-    margin-top: 90px;
+    margin:auto;
+    max-height:calc(100dvh - 48px);
+    overflow-y:auto;
 }
 
 /* Título */
